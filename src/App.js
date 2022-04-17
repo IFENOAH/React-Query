@@ -8,6 +8,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { RQSuperHeroPage } from "./components/RQSuperHero.Page";
 import { ParallelQueriesPage } from "./components/ParallelQueries.page";
 import { DynamicParallelPage } from "./components/DynamicParallel.Page";
+import { DependentQueriesPage } from "./components/DependentQueries.Page";
 
 function App() {
   const queryClient = new QueryClient();
@@ -29,6 +30,12 @@ function App() {
             </ul>
           </nav>
           <Routes>
+            <Route
+              path="/rq-dependent"
+              element={
+                <DependentQueriesPage email="ifeoluwadayonoah@gmail.com" />
+              }
+            ></Route>
             <Route
               path="/rq-dynamic-parallel"
               element={<DynamicParallelPage heroIds={[1, 3]} />}

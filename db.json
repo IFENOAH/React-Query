@@ -29,5 +29,17 @@
       "id": 3,
       "name": "Rachel Green"
     }
+  ],
+  "users": [
+    {
+      "id": "ifeoluwadayonoah@gmail.com",
+      "channelId": "noahIfe"
+    }
+  ],
+  "channels": [
+    {
+      "id": "noahIfe",
+      "courses": ["chess, coding, photography"]
+    }
   ]
 }
