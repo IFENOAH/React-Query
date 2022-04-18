@@ -9,6 +9,7 @@ import { RQSuperHeroPage } from "./components/RQSuperHero.Page";
 import { ParallelQueriesPage } from "./components/ParallelQueries.page";
 import { DynamicParallelPage } from "./components/DynamicParallel.Page";
 import { DependentQueriesPage } from "./components/DependentQueries.Page";
+import { PaginatedQueriesPage } from "./components/PaginatedQueries.Page";
 
 function App() {
   const queryClient = new QueryClient();
@@ -30,6 +31,10 @@ function App() {
             </ul>
           </nav>
           <Routes>
+            <Route
+              path="/rq-paginated"
+              element={<PaginatedQueriesPage />}
+            ></Route>
             <Route
               path="/rq-dependent"
               element={

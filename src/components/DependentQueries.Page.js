@@ -16,5 +16,6 @@ export const DependentQueriesPage = ({ email }) => {
   useQuery(["courses", channelId], () => fetchCoursesByChannelId(channelId), {
     enabled: !!channelId,
   });
+
   return <div>DependentQueriesPage</div>;
 };
